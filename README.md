@@ -1,1 +1,1 @@
-# bot
+commit-bot
