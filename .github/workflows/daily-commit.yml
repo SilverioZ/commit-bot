@@ -21,8 +21,8 @@ jobs:
  
       - name: Commit and push output
         run: |
-          git config user.name "commit-bot"
-          git config user.email "commit-bot@users.noreply.github.com"
+          git config user.name "${{ secrets.GIT_USERNAME }}"
+          git config user.email "${{ secrets.GIT_EMAIL }}"
           git add -A
           git diff --cached --quiet || git commit -m "chore: daily automated commit $(date +'%Y-%m-%d')"
           git push
