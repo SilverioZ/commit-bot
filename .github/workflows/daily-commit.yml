@@ -2,7 +2,7 @@ name: Daily Commit Bot
  
 on:
   schedule:
-    - cron: '0 8 * * *'  # Runs every day at 8am CST (Tulsa)
+    - cron: '0 13 * * *'  # Runs every day at 8am CST (Tulsa)
   workflow_dispatch:       # Allows manual triggering from GitHub UI
  
 jobs:
